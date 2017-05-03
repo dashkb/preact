@@ -2,7 +2,7 @@ import { h, h as createElement } from './h';
 import { cloneElement } from './clone-element';
 import { Component } from './component';
 import { render } from './render';
-import { rerender } from './render-queue';
+import { rerender, enqueueRender } from './render-queue';
 import options from './options';
 
 export default {
@@ -12,7 +12,8 @@ export default {
 	Component,
 	render,
 	rerender,
-	options
+	options,
+	enqueueRender
 };
 
 export {
@@ -22,5 +23,6 @@ export {
 	Component,
 	render,
 	rerender,
-	options
+	options,
+	enqueueRender
 };
